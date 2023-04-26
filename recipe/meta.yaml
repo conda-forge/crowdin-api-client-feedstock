@@ -1,5 +1,5 @@
 {% set name = "crowdin-api-client" %}
-{% set version = "1.7.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7acd9a4d31df4a8428e887f739e76a420bd80638227634c1096a7c0aa17e30c8
+  sha256: 89aa6dfb755f28956e1b6fce98b912e093c4b29db875f74335992d75c635079d
 
 
 build:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/crowdin/crowdin-api-client-python
-  summary: 'Python client library for Crowdin API v2'
+  summary: Python client library for Crowdin API v2
   description: |
     The Crowdin Python client is a lightweight interface to the Crowdin API.
     It provides common services for making API requests.
