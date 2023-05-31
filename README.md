@@ -1,11 +1,11 @@
-About crowdin-api-client
-========================
+About crowdin-api-client-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/crowdin-api-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/crowdin/crowdin-api-client-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/crowdin-api-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python client library for Crowdin API v2
 
