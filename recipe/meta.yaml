@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 7acd9a4d31df4a8428e887f739e76a420bd80638227634c1096a7c0aa17e30c8
 
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - requests >=2.25.1
     - typing_extensions
 
@@ -29,6 +29,7 @@ test:
     - crowdin_api
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
