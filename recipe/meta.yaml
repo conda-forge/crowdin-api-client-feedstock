@@ -1,5 +1,5 @@
 {% set name = "crowdin-api-client" %}
-{% set version = "1.24.0" %}
+{% set version = "1.24.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 870615004c7a3ced17d8537b98efc0fdff8bd9151437e6b01641ccef1a05afad
+  sha256: d2a385c2b3f8e985d5bb084524ae14aef9045094fba0b2df1df82d9da97155b1
 
 
 build:
